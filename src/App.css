@@ -1,0 +1,45 @@
+.drum-machine {
+	--custom-yellow: hsl(50, 100%, 50%);
+
+	font-size: 20px;
+
+	padding: 3em;
+	width: max(100%, 1200px);
+}
+
+.display {
+	font-size: 1.2em;
+
+	padding: .3em 5em;
+	border-radius: 1em;
+
+	background-color: var(--custom-yellow);
+}
+
+.drum-pad-container {
+	color: white;
+	margin-top: 2em;
+}
+
+.drum-pad {
+	width: 6em;
+	height: 6em;
+
+	cursor: pointer;
+
+	font-size: .8em;
+	font-weight: bolder;
+
+	color: white;
+	background: none;
+
+	border: 3px solid var(--custom-yellow);
+	border-radius: 1em;
+
+	scale: 1;
+	transition: scale .5s ease;
+}
+
+.pressed {
+	scale: 1.2;
+}
